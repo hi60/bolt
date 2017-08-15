@@ -1,0 +1,467 @@
+img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+
+header {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.headerInner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%; 
+}
+
+.brandImg {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.fa-bolt {
+    color: #333;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.headerBtn {
+    background-color: #74cfae;
+    border: 1px solid #74cfae;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 14px 12px;
+}
+
+@media screen and (max-width:1199px) {
+
+    .headerInner {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    
+    header {
+        z-index: 999;
+    }
+
+    nav {
+        background-color: #fff;
+        position: absolute;
+        top: 70px;
+        left: 0; 
+        width: 100%;
+        z-index: 980;
+    }
+
+    .headerBtn {
+        margin: 15px auto;
+        width: 100%;
+    }
+
+    .navToggle {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+        cursor: pointer;
+        padding: 10px;
+        width: 45px;
+        height: 35px;
+    }
+
+    .spMenu {
+    position: relative;
+    }
+
+    .threeLines {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        position: absolute;
+        width: 100%;
+    }
+
+    .threeLines:nth-child(1) {
+        top: 0;
+    }
+
+    .threeLines:nth-child(2) {
+        top: 5px;
+    }
+
+    .threeLines:nth-child(3) {
+        top: 10px;
+    }
+
+}
+
+/* main */
+main {
+    padding-top: 70px;
+}
+
+/* contents1 */
+
+.contents1 {
+    background-color: #f2f2f2;
+    padding: 250px 0;
+    width: 100%;
+}
+
+.boltTheme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin: auto;
+    max-width: 1200px;
+}
+
+h1 {
+    color: #74cfae;
+    font-size: 90px;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    color: #c0c0c0;
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media screen and ( max-width:766px ) {
+
+    .contents1 {
+        padding-top: 160px;
+        padding-bottom: 130px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+}
+
+/* contents2 */
+
+.contents2 {
+    background-color: #74cfae;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.canDoContainer {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Raleway';
+    padding-top: 50px;
+    margin: auto;
+    width: 80%;
+}
+
+.iphoneImg {
+    margin: 0 100px;
+}
+
+.canDoTxtContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    font-weight: 200;
+    width: 55%;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.canDoTxt {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 20px;
+    line-height: 1.5em;
+    margin-top: 20px;
+}
+
+@media screen and ( max-width:1199px ) {
+
+    .contents2 {
+        padding-bottom: 25px;
+    }
+
+    .canDoContainer {
+        flex-flow: column;
+        width: 80%;
+    }
+
+    .iphoneImg {
+        margin: auto;
+    }
+
+    .canDoTxtContainer {
+        margin: auto;
+        width: 100%;
+    }
+
+    h3 {
+        margin-top: 20px;
+    }
+
+    .canDoTxt {
+        margin-top: 35px;
+    }
+
+}
+
+/* contents3 */
+
+.contents3 {
+    background-color: #f2f2f2;
+    font-family: 'Raleway';
+    padding-top: 60px;
+    padding-bottom: 70px;
+    width: 100%;
+}
+
+.latestWorkContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin: auto;
+    width: 80%;
+}
+
+h4 {
+    color: #333;
+    font-size: 24px;
+}
+
+.figureContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer:last-child {
+    margin-top: 80px;
+}
+
+.workFigure {
+    margin-left: 100px;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.workFigure:first-child {
+    margin-left: 0;
+}
+
+.workFigure:hover {
+    opacity: 1;
+}
+
+.latestWorkBottomContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 90px;
+}
+
+.latestWorkTxt {
+    color: #333;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5em;
+    width: 75%;
+}
+
+.emalButton {
+    background-color: #74cfae;
+    border: 1px solid #74cfae;
+    color: #fff;
+    font-size: 12px;
+    padding: 14px 20px;
+    margin-left: 90px;
+}
+
+@media screen and (max-width:1199px) {
+
+    .latestWorkContainer {
+        width: 95%;
+    }
+
+    .imgContainer {
+        flex-flow: column;
+    }
+
+    .workFigure {
+        margin: auto;
+    }
+
+    .latestWorkBottomContainer {
+        align-items: center;
+        flex-flow: column;
+    }
+
+    .latestWorkTxt {
+        width: 100%;
+    }
+
+    .emalButton {
+        margin: auto;
+        margin-top: 40px;
+    }
+
+}
+
+/* contents4 */
+.contents4 {
+    background-color: #4e4e4e;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+h5 {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Raleway';
+    margin-bottom: 50px;
+}
+
+.skillContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+
+.skillImgContainer {
+    margin-left: 180px;
+}
+
+.skillImgContainer:first-child {
+    margin-left: 0;
+}
+
+.skillTxt {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 16px;
+}
+
+@media screen and (max-width:1199px) {
+
+    .skillContainer {
+        flex-flow: column;
+    }
+
+    .skillImgContainer {
+        margin: auto;
+        margin-top: 88px;
+    }
+
+    .skillImgContainer:first-child {
+        margin: auto;
+    }
+/* ここでは.skillImgContainer:first-childのmarginを再設定したのに対し、
+contents3ではfirst-childにmarginを設定せずにレイアウトが中央寄りになった理由を知りたい。
+どちらも擬似要素に対してmargin-left:0を設定したのに… */
+}
+
+/* contents5 */
+.contents5 {
+    background-color: #f2f2f2;
+    width: 100%;
+    padding: 200px 0;
+}
+
+.snsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+
+.snsTxt {
+    color: #74cfae;
+    cursor: pointer;
+    font-size: 50px;
+    text-align: center;
+    width: 185px;
+    padding: 24px 0;
+}
+
+.snsTxt:hover {
+    background-color: #fff;
+}
+
+@media screen and (max-width:1199px) {
+    .snsContainer {
+        flex-flow: column;
+    }
+}
+
+/* footer */
+footer {
+    background-color: #74cfae;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    width: 100%
+}
+
+.copyright {
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+
+@media screen and (max-width:1199px) {
+    .copyright {
+        width: 95%;
+    }
+}
+
+
+/* todo */
+/* 透明度の話  */
+/* snsアイコンの話 */
