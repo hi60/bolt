@@ -3,6 +3,7 @@ img {
     max-height: 100%;
     width: auto;
     height: auto;
+    vertical-align: middle;
 }
 
 .wrapper {
@@ -32,9 +33,9 @@ header {
 
 .fa-bolt {
     color: #333;
+    opacity: 0.7;
     font-size: 40px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px 0;
 }
 
 .headerBtn {
@@ -85,7 +86,7 @@ header {
     }
 
     .spMenu {
-    position: relative;
+        position: relative;
     }
 
     .threeLines {
@@ -148,8 +149,7 @@ h2 {
 @media screen and ( max-width:766px ) {
 
     .contents1 {
-        padding-top: 160px;
-        padding-bottom: 130px;
+        padding: 160px 0 130px;
     }
 
     h1 {
@@ -241,8 +241,7 @@ h3 {
 .contents3 {
     background-color: #f2f2f2;
     font-family: 'Raleway';
-    padding-top: 60px;
-    padding-bottom: 70px;
+    padding: 60px 0 70px;
     width: 100%;
 }
 
@@ -265,8 +264,7 @@ h4 {
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    margin: auto;
-    margin-top: 40px;
+    margin: 40px auto 0;
 }
 
 .imgContainer {
@@ -341,8 +339,7 @@ h4 {
     }
 
     .emalButton {
-        margin: auto;
-        margin-top: 40px;
+        margin: 40px auto 0;
     }
 
 }
@@ -350,8 +347,7 @@ h4 {
 /* contents4 */
 .contents4 {
     background-color: #4e4e4e;
-    padding-top: 70px;
-    padding-bottom: 100px;
+    padding: 70px 0 100px;
 }
 
 h5 {
@@ -392,8 +388,7 @@ h5 {
     }
 
     .skillImgContainer {
-        margin: auto;
-        margin-top: 88px;
+        margin: 88px auto 0;
     }
 
     .skillImgContainer:first-child {
@@ -432,17 +427,21 @@ contents3ではfirst-childにmarginを設定せずにレイアウトが中央寄
     background-color: #fff;
 }
 
-@media screen and (max-width:1199px) {
+@media screen and (max-width:766px) {
     .snsContainer {
         flex-flow: column;
+        padding: 0 15px 0;
+    }
+
+    .snsTxt {
+        width: 100%;
     }
 }
 
 /* footer */
 footer {
     background-color: #74cfae;
-    padding-top: 20px;
-    padding-bottom: 25px;
+    padding: 20px 0 25px;
     width: 100%
 }
 
@@ -460,8 +459,3 @@ footer {
         width: 95%;
     }
 }
-
-
-/* todo */
-/* 透明度の話  */
-/* snsアイコンの話 */
